@@ -14,3 +14,107 @@
   src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+.hero-title{
+  color: #fff;
+  font-family: 'SF Pro Display',sans-serif;
+  font-size: 4.4vw;
+  line-height: 66px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.hero-subtitle{
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.4vw;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  color: #444444;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url('../img/parallax1.jpg');
+  min-height: 75%;
+  text-shadow: 0 0 6px #4444446e;
+}
+
+/* Second image (Events) */
+.bgimg-2 {
+  background-image: url("../img/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("../img/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {
+  letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+  cursor: pointer;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+/* Alter Hero Size for Smaller Screens */
+@media only screen and (max-width: 900px) {
+
+  .hero-title{
+    font-size: 7vw;
+  }
+  
+  .hero-subtitle{
+    font-size: 2vw;
+  }
+
+}
+
+/* Styles for portrait orientation */
+@media (orientation: portrait) {
+  .bgimg-1 {
+    min-height: 50%;
+  }
+}

@@ -10,6 +10,17 @@
   <style lang="en" type="text/css" id="dark-mode-native-style"></style>
   <style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
 
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>KZN.Social</title>
@@ -21,76 +32,93 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-
-    <style>
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Lato", sans-serif;
-      }
-
-      body,
-      html {
-        height: 100%;
-        color: #444444;
-        line-height: 1.8;
-        scroll-behavior: smooth;
-      }
-
-      /* Create a Parallax Effect */
-      .bgimg-1,
-      .bgimg-2,
-      .bgimg-3 {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      /* First image (Logo. Full height) */
-      .bgimg-1 {
-        background-image: url("./img/parallax1.jpg");
-        min-height: 100%;
-      }
-
-      /* Second image (Events) */
-      .bgimg-2 {
-        background-image: url("./img/parallax2.jpg");
-        min-height: 400px;
-      }
-
-      /* Third image (Contact) */
-      .bgimg-3 {
-        background-image: url("./img/parallax3.jpg");
-        min-height: 400px;
-      }
-
-      .w3-wide {
-        letter-spacing: 10px;
-      }
-
-      .w3-hover-opacity {
-        cursor: pointer;
-      }
-
-      /* Turn off parallax scrolling for tablets and phones */
-      @media only screen and (max-device-width: 1600px) {
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-          background-attachment: scroll;
-          min-height: 400px;
-        }
-      }
-    </style>
   </head>
 
   <body data-new-gr-c-s-check-loaded="14.1195.0" data-gr-ext-installed="">
     <!-- Navbar (sit on top) -->
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    
+    <div class="site-navbar-wrap">
+      <div class="site-navbar-top">
+        <div class="container py-3">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="d-flex mr-auto">
+                <!-- Example that could be added for predefined email body: &body=This%20is%20a%20predefined%20email%20body.-->
+                <a href="mailto:social@kzncollective.com?subject=Enquiry" class="d-flex align-items-center mr-4">
+                  <span class="icon-envelope mr-2"></span>
+                  <span class="d-none d-md-inline-block">social@kzncollective.com</span>
+                </a>
+                <a href="tel:+18768870347" class="d-flex align-items-center mr-auto">
+                  <span class="icon-phone mr-2"></span>
+                  <span class="d-none d-md-inline-block">+1 (876) 887-0347</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 text-right">
+              <div class="mr-auto">
+                <a href="https://x.com" class="p-2 pl-0"><span class="fa-brands fa-x-twitter"></span></a>
+                <a href="https://www.facebook.com/profile.php?id=61566330921257" class="p-2 pl-0"><span class="fa-brands fa-facebook-f"></span></a>
+                <a href="https://www.tiktok.com/@kzn.social" class="p-2 pl-0"><span class="fa-brands fa-tiktok"></span></a>
+                <a href="https://www.instagram.com/kzn.social/" class="p-2 pl-0"><span class="fa-brands fa-instagram"></span></a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-navbar site-navbar-target js-sticky-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-2">
+              <h1 class="my-0 site-logo"><a href="index.html">KZN.Social</a></h1>
+            </div>
+            <div class="col-10">
+              <nav class="site-navigation text-right" role="navigation">
+                <div class="container">
+                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+                  <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                    <li class="active"><a href="#home-section" class="nav-link">Home</a></li>
+                    <!--<li class="has-children">
+                      <a href="#" class="nav-link">Pages</a>
+                      <ul class="dropdown arrow-top">
+                        <li><a href="#" class="nav-link">Team</a></li>
+                        <li><a href="#" class="nav-link">Pricing</a></li>
+                        <li><a href="#" class="nav-link">FAQ</a></li>
+                        <li class="has-children">
+                          <a href="#">More Links</a>
+                          <ul class="dropdown">
+                            <li><a href="#">Menu One</a></li>
+                            <li><a href="#">Menu Two</a></li>
+                            <li><a href="#">Menu Three</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>-->
+                    <li><a href="#about-section" class="nav-link">About</a></li>
+                    <li><a href="#gallery-section" class="nav-link">Services</a></li>
+                    <li><a href="#gallery-section" class="nav-link">Gallery</a></li>
+                    <li><a href="#events-section" class="nav-link">Team</a></li>
+                    <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
     <div class="w3-top">
       <div class="w3-bar" id="myNavbar">
         <a
@@ -119,7 +147,6 @@
         </a>
       </div>
 
-      <!-- Navbar on small screens -->
       <div
         id="navDemo"
         class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
@@ -145,14 +172,18 @@
         <a href="#" class="w3-bar-item w3-button">SEARCH</a>
       </div>
     </div>
+    -->
 
     <!-- First Parallax Image with Logo Text -->
-    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="bgimg-1 w3-display-container" id="home">
       <div class="w3-display-middle" style="white-space: nowrap">
-        <span
-          class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"
-          >KZN <span class="w3-hide-small"></span> SOCIAL</span
-        >
+        <h1 class="hero-title">
+          <strong >Ready to go Viral?</strong>
+        </h1>
+        <br>
+        <p class="hero-subtitle">
+          Empower your brand through creativity and strategy.
+        </p>
       </div>
     </div>
 
@@ -367,26 +398,24 @@
 
       <div class="w3-row w3-padding-32 w3-section">
         <div class="w3-col m4 w3-container">
-          <img
+          <!-- <img           ###### It would be ideal to load this first and then the maps intergration afterward for optimisation ######
             src="./img/map.jpg"
             class="w3-image w3-round"
             style="width: 100%"
-          />
+          /> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3793.092224708183!2d-77.88890367397204!3d18.06728483286166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edbdfca7689dead%3A0x65b658f258879cd0!2sBrompton%2C%20Jamaica!5e0!3m2!1sen!2suk!4v1731203298176!5m2!1sen!2suk"
+          class="w3-image w3-round" style="width: 100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="w3-col m8 w3-panel">
-          <div class="w3-large w3-margin-bottom">
-            <i
-              class="fa fa-location-dot fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
-            ></i>
-            St. Elizabeth, JM<br />
-            <i
-              class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
-            ></i>
-            Phone: +00 151515<br />
-            <i
-              class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
-            ></i>
-            Email: social@kzncollective.com<br />
+          <div class="w3-large w3-margin-bottom" style="line-height: 2.2;">
+            <i class="fa fa-location-dot fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+            St. Elizabeth, JM<br/>
+            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+            Email: social@kzncollective.com<br/>
+            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+            Phone (JM): +1 (876) 887-0347 <br/>
+            <i class="fa fa-phone fa-fw w3-hover-text-white w3-xlarge w3-margin-right" style="opacity: 0;"></i>
+            Phone (UK): +44 7710 805736<br/>
           </div>
           <p>Leave us a note:</p>
           <form
@@ -452,7 +481,7 @@
           <i class="fa-brands fa-tiktok w3-hover-opacity"></i>
         </a>
         <a style="text-decoration: none"
-        href="#">
+        href="https://x.com">
           <i class="fa-brands fa-x-twitter w3-hover-opacity"></i>
         </a>
       </div>
@@ -497,5 +526,11 @@
         }
       }
     </script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
