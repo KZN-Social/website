@@ -31,7 +31,6 @@
   font-size: 1.4vw;
 }
 
-
 body,
 h1,
 h2,
@@ -53,11 +52,13 @@ html {
 /* Create a Parallax Effect */
 .bgimg-1,
 .bgimg-2,
-.bgimg-3 {
+.bgimg-3,
+.bgimg-4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-shadow: 0 0 6px #4444446e;
 }
 
 /* First image (Logo. Full height) */
@@ -66,18 +67,29 @@ html {
     linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
     url('../img/parallax1.jpg');
   min-height: 75%;
-  text-shadow: 0 0 6px #4444446e;
 }
 
-/* Second image (Events) */
+/* Second image (Services) */
 .bgimg-2 {
-  background-image: url("../img/parallax2.jpg");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/parallax2.jpg');
   min-height: 400px;
 }
 
-/* Third image (Contact) */
+/* Third image (Gallery) */
 .bgimg-3 {
-  background-image: url("../img/parallax3.jpg");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/parallax3.jpg');
+  min-height: 400px;
+}
+
+/* Fourth image (Contact) */
+.bgimg-4 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/parallax4.jpg');
   min-height: 400px;
 }
 
