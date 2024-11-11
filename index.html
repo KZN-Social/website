@@ -37,6 +37,7 @@
   <body
   data-new-gr-c-s-check-loaded="14.1195.0"
   data-gr-ext-installed="">
+  <section id="home"></section>
     <!-- Navbar (sit on top) -->
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
@@ -71,7 +72,6 @@
                 <a href="https://www.tiktok.com/@kzn.social" class="p-2 pl-0"><span class="fa-brands fa-tiktok"></span></a>
                 <a href="https://www.instagram.com/kzn.social/" class="p-2 pl-0"><span class="fa-brands fa-instagram"></span></a>
               </div>
-              
             </div>
           </div>
         </div>
@@ -92,13 +92,13 @@
                     </a>
                   </div>
 
-                  <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-                    <li class="active"><a href="#home-section" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#gallery" class="nav-link">Services</a></li>
-                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                    <li><a href="#team" class="nav-link">Team</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                  <ul class="nav site-menu main-menu js-clone-nav d-none d-lg-block">
+                    <li class="home active"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="about"><a href="#about" class="nav-link">About</a></li>
+                    <li class="gallery"><a href="#gallery" class="nav-link">Services</a></li>
+                    <li class="gallery"><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li class="team"><a href="#team" class="nav-link">Team</a></li>
+                    <li class="contact"><a href="#contact" class="nav-link">Contact</a></li>
                     <!--<li class="has-children">
                       <a href="#" class="nav-link">Pages</a>
                       <ul class="dropdown arrow-top">
@@ -182,19 +182,22 @@
 
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container" id="home" class="active">
-      <div class="w3-display-middle" style="white-space: nowrap">
-        <h1 class="hero-title">
-          <strong >Ready to go Viral?</strong>
-        </h1>
-        <br>
-        <p class="hero-subtitle">
-          Empower your brand through creativity and strategy.
-        </p>
-      </div>
+      <section id="home">
+        <div class="w3-display-middle" style="white-space: nowrap">
+          <h1 class="hero-title">
+            <strong >Ready to go Viral?</strong>
+          </h1>
+          <br>
+          <p class="hero-subtitle">
+            Empower your brand through creativity and strategy.
+          </p>
+        </div>
+      </section>
     </div>
 
     <!-- Container (About Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="about">
+    <section id="about">
+      <div class="w3-content w3-container w3-padding-64" id="about">
       <h3 class="w3-center">ABOUT US</h3>
       <p class="w3-center"><em>Helping brands stand out digitally.</em></p>
       <br>
@@ -250,9 +253,9 @@
           </p>
         </div>
       </div>
-    </div>
+      </div>
 
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+      <div class="w3-row w3-center w3-dark-grey w3-padding-16">
       <div class="w3-quarter w3-section">
         <span class="w3-xlarge">14+</span><br />
         Photo Shoots
@@ -269,17 +272,19 @@
         <span class="w3-xlarge">2</span><br />
         Sponsors
       </div>
-    </div>
+      </div>
+    </section>
 
-    <!-- Second Parallax Image with Client Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <section id="gallery">
+      <!-- Second Parallax Image with Client Text -->
+      <div class="bgimg-2 w3-display-container w3-opacity-min">
       <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-white w3-wide">CLIENTS</span>
       </div>
-    </div>
+      </div>
 
-    <!-- Container (Gallery Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="gallery">
+      <!-- Container (Gallery Section) -->
+      <div class="w3-content w3-container w3-padding-64" id="gallery">
       <h3 class="w3-center">GALLERY</h3>
       <p class="w3-center">
         <em
@@ -373,10 +378,10 @@
           />
         </div>
       </div>
-    </div>
+      </div>
 
-    <!-- Modal for full size images on click-->
-    <div
+      <!-- Modal for full size images on click-->
+      <div
       id="modal01"
       class="w3-modal w3-black"
       onclick="this.style.display=&#39;none&#39;"
@@ -392,17 +397,19 @@
         <img id="img01" class="w3-image" />
         <p id="caption" class="w3-opacity w3-large"></p>
       </div>
-    </div>
+      </div>
+    </section>
 
-    <!-- Third Parallax Image with Events Text -->
-    <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <section id="contact">
+      <!-- Third Parallax Image with Events Text -->
+      <div class="bgimg-3 w3-display-container w3-opacity-min">
       <div class="w3-display-middle">
         <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
       </div>
-    </div>
+      </div>
 
-    <!-- Container (Contact Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="contact">
+      <!-- Container (Contact Section) -->
+      <div class="w3-content w3-container w3-padding-64" id="contact">
       <h3 class="w3-center">OUR HQ!</h3>
       <p class="w3-center"><em>We'd love your feedback!</em></p>
 
@@ -468,7 +475,8 @@
           </form>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer
@@ -541,5 +549,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
   </body>
 </html>
