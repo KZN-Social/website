@@ -105,7 +105,8 @@ html {
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1,
   .bgimg-2,
-  .bgimg-3 {
+  .bgimg-3,
+  .bgimg-4 {
     background-attachment: scroll;
     min-height: 400px;
   }
@@ -127,6 +128,12 @@ html {
 /* Styles for portrait orientation */
 @media (orientation: portrait) {
   .bgimg-1 {
-    min-height: 50%;
+    min-height: 100vh;
+  }
+
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4 {
+    min-height: 20vh;
   }
 }
