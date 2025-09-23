@@ -66,7 +66,7 @@ html {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
     url('../img/parallax1.webp');
-  min-height: 75%;
+  min-height: 100%;
 }
 
 /* Second image (Services) */
@@ -137,3 +137,35 @@ html {
     min-height: 20vh;
   }
 }
+
+
+
+/* Create a clean stacking context on the section */
+.has-video { position: relative; isolation: isolate; }
+
+/* the video sits on top of the background image and fades in */
+.bg-video {
+  z-index: 0;
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  opacity: 0; transition: opacity .35s ease;
+  pointer-events: none; /* keep section interactive */
+}
+.bg-video.is-ready { opacity: 1; }
+
+/* respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .bg-video { display: none; }
+}
+
+.has-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55); /* adjust opacity as needed */
+  z-index: 1; /* sits above the video but below content */
+  pointer-events: none;
+}
+
+.w3-display-middle {z-index: 2; }
